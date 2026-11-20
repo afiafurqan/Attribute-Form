@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Styled Form (HTML attributes only)</title>
+</head>
+
+<body bgcolor="#eef2f7" text="#222222" link="#2563eb" vlink="#2563eb">
+
+  <br>
+
+  <!-- Card -->
+  <table align="center" width="640" bgcolor="#ffffff" border="1" bordercolor="#d0d7e2" cellpadding="0" cellspacing="0">
+
+    <!-- Header -->
+    <tr>
+      <td bgcolor="#2563eb" align="center">
+        <table width="100%" cellpadding="18" cellspacing="0" border="0">
+          <tr>
+            <td align="center">
+              <font face="Arial, Helvetica, sans-serif" color="#ffffff" size="6"><b>Sign Up</b></font><br>
+              <font face="Arial, Helvetica, sans-serif" color="#dbe7ff" size="3">Create your account — quick &amp; simple</font>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- Form -->
+    <tr>
+      <td>
+        <form action="#" method="post">
+          <table width="100%" cellpadding="10" cellspacing="0" border="0">
+
+            <!-- First name / Last name -->
+            <tr>
+              <td width="50%" valign="top">
+                <font face="Arial, Helvetica, sans-serif" size="2"><b><label for="first-name">First name</label></b></font><br>
+                <input type="text" id="first-name" name="first_name" size="28" maxlength="40" placeholder="John" required>
+              </td>
+              <td width="50%" valign="top">
+                <font face="Arial, Helvetica, sans-serif" size="2"><b><label for="last-name">Last name</label></b></font><br>
+                <input type="text" id="last-name" name="last_name" size="28" maxlength="40" placeholder="Doe" required>
+              </td>
+            </tr>
+
+            <!-- Email -->
+            <tr>
+              <td colspan="2">
+                <font face="Arial, Helvetica, sans-serif" size="2"><b><label for="email">Email address</label></b></font><br>
+                <input type="email" id="email" name="email" size="64" placeholder="you@example.com" required>
+              </td>
+            </tr>
+
+            <!-- Phone / Date of birth -->
+            <tr>
+              <td valign="top">
+                <font face="Arial, Helvetica, sans-serif" size="2"><b><label for="phone">Phone</label></b></font><br>
+                <input type="tel" id="phone" name="phone" size="28" placeholder="+92 300 1234567">
+              </td>
+              <td valign="top">
+                <font face="Arial, Helvetica, sans-serif" size="2"><b><label for="dob">Date of birth</label></b></font><br>
+                <input type="date" id="dob" name="dob">
+              </td>
+            </tr>
+
+            <!-- Gender -->
+            <tr>
+              <td colspan="2">
+                <font face="Arial, Helvetica, sans-serif" size="2"><b>Gender</b></font><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <font face="Arial, Helvetica, sans-serif" size="2"><label for="male">Male</label></font>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" id="female" name="gender" value="female">
+                <font face="Arial, Helvetica, sans-serif" size="2"><label for="female">Female</label></font>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" id="other" name="gender" value="other">
+                <font face="Arial, Helvetica, sans-serif" size="2"><label for="other">Other</label></font>
+              </td>
+            </tr>
+
+            <!-- Password -->
+            <tr>
+              <td colspan="2">
+                <font face="Arial, Helvetica, sans-serif" size="2"><b><label for="password">Create password</label></b></font><br>
+                <input type="password" id="password" name="password" size="64" minlength="8" placeholder="At least 8 characters" required>
+              </td>
+            </tr>
+
+            <!-- Short bio -->
+            <tr>
+              <td colspan="2">
+                <font face="Arial, Helvetica, sans-serif" size="2"><b><label for="bio">Short bio</label></b></font><br>
+                <textarea id="bio" name="bio" rows="4" cols="62" maxlength="250" placeholder="Tell us a little about yourself..."></textarea>
+              </td>
+            </tr>
+
+            <!-- Department / Experience level -->
+            <tr>
+              <td valign="top">
+                <font face="Arial, Helvetica, sans-serif" size="2"><b><label for="department">Department</label></b></font><br>
+                <select id="department" name="department">
+                  <option value="development">Development</option>
+                  <option value="design">Design</option>
+                  <option value="qa">QA</option>
+                  <option value="other">Other</option>
+                </select>
+              </td>
+              <td valign="top">
+                <font face="Arial, Helvetica, sans-serif" size="2"><b>Experience level</b></font><br>
+                <input type="radio" id="beginner" name="experience" value="beginner" checked>
+                <font face="Arial, Helvetica, sans-serif" size="2"><label for="beginner">Beginner</label></font>
+                <input type="radio" id="intermediate" name="experience" value="intermediate">
+                <font face="Arial, Helvetica, sans-serif" size="2"><label for="intermediate">Intermediate</label></font>
+                <input type="radio" id="expert" name="experience" value="expert">
+                <font face="Arial, Helvetica, sans-serif" size="2"><label for="expert">Expert</label></font>
+              </td>
+            </tr>
+
+            <!-- Checkboxes -->
+            <tr>
+              <td colspan="2">
+                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                <font face="Arial, Helvetica, sans-serif" size="2"><label for="newsletter">Subscribe to newsletter</label></font>
+                &nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id="terms" name="terms" value="yes" required>
+                <font face="Arial, Helvetica, sans-serif" size="2"><label for="terms">I accept the <a href="#">terms &amp; conditions</a></label></font>
+              </td>
+            </tr>
+
+            <!-- Submit -->
+            <tr>
+              <td colspan="2" align="center">
+                <input type="submit" value="Create Account">
+              </td>
+            </tr>
+
+            <!-- Sign in link -->
+            <tr>
+              <td colspan="2" align="center">
+                <font face="Arial, Helvetica, sans-serif" size="2">Already have an account? <a href="#">Sign in</a></font>
+              </td>
+            </tr>
+
+          </table>
+        </form>
+      </td>
+    </tr>
+
+  </table>
+
+  <!-- Footer note -->
+  <table align="center" width="640" cellpadding="12" cellspacing="0" border="0">
+    <tr>
+      <td align="center">
+        <font face="Arial, Helvetica, sans-serif" color="#555555" size="2">
+          This form is styled using HTML attributes only (no CSS files or inline styles).
+        </font>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
